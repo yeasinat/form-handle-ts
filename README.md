@@ -33,8 +33,6 @@ export const userSchema = z.object({
 export type UserFormValues = z.infer<typeof userSchema>;
 ```
 
-✅ Now you have **schema for validation** and **types for form**.
-
 ---
 
 ## 🔥 2. Create Mutation Functions in a Separate Hook
@@ -70,7 +68,6 @@ export const useUserMutations = () => {
 };
 ```
 
-✅ Now your **mutation logic is separated** from your components.
 
 ---
 
@@ -129,8 +126,6 @@ export const UserForm = ({ mode, defaultValues }: UserFormProps) => {
 };
 ```
 
-✅ Now the **form dynamically handles Create/Edit** using one component.
-
 ---
 
 ## 🔄 4. Use the Form and Load Default Values Dynamically
@@ -163,8 +158,6 @@ export default function UsersPage() {
 }
 ```
 
-✅ Now you can dynamically **switch between Create and Edit** based on user interaction.
-
 ---
 
 ## 📋 Final Folder Structure
@@ -180,8 +173,6 @@ src/
 └── pages/
     └── users.tsx
 ```
-
-✅ **Separation of concerns** is achieved: schema, mutations, form UI, and page logic are all separated.
 
 ---
 
